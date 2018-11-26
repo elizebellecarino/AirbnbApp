@@ -37,7 +37,7 @@ import Button2 from '../ButtonWithBackground/Button2'
     const styles= StyleSheet.create({
       container:{
          flex:1,
-         backgroundColor: '#f5f5f5'
+         backgroundColor: 'white'
         },
         logoContent: {
             flex: 1,

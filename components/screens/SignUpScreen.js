@@ -26,9 +26,9 @@ import Button2 from '../ButtonWithBackground/Button2'
              <Text style={styles.createAnAccountText}>Create an Account</Text>
            </View>
              <View style={styles.inputContainer}>
-              <DefaultInput placeholder={"Enter Yondu Email"} style={{backgroundColor:"#F6F6F5"}} /> 
-              <DefaultInput placeholder={"Password"} style={{backgroundColor:"#F6F6F5"}} />
-              <DefaultInput placeholder={"Confirm Password"} style={{backgroundColor:"#F6F6F5"}} />
+              <DefaultInput placeholder={"Enter Yondu Email"} style={{backgroundColor:"#f5f5f5"}} /> 
+              <DefaultInput placeholder={"Password"} style={{backgroundColor:"#f5f5f5"}} />
+              <DefaultInput placeholder={"Confirm Password"} style={{backgroundColor:"#f5f5f5"}} />
              </View>
       <View style={styles.buttonContent}>
         <Button1 onPress={() =>  this.props.navigation.navigate('Confirmation')}>Submit</Button1>
@@ -42,7 +42,7 @@ import Button2 from '../ButtonWithBackground/Button2'
     const styles= StyleSheet.create({
       container:{
          flex:1,
-         backgroundColor: '#f5f5f5'
+         backgroundColor: 'white'
         },
         logoContent: {
             flex: 1,

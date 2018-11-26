@@ -2,17 +2,17 @@ import React,{ Component }  from 'react'
 import Icon from "react-native-vector-icons/Ionicons"
 import {View,Text,StyleSheet, TouchableOpacity} from 'react-native'
 import { createStackNavigator, createMaterialTopTabNavigator, createSwitchNavigator } from 'react-navigation'; 
-import AnnouncementsScreen from '../screens/AnnouncementsScreen'
-import YonduJacketContent from '../screens/AnnouncementContent/YonduJacketContent'
-import SendFeedback from '../screens/AnnouncementContent/SendFeedback'
+import SkillsScreen from '../screens/SkillsScreen'
+import UXFundamentals from '../screens/SkillsContent/UXFundamentals'
+
 
 
 export default ContentStackNav = createStackNavigator({
-        Home:{
-            screen:AnnouncementsScreen,
+        SkillsScreen:{
+            screen:SkillsScreen,
             navigationOptions:
               ({navigation}) =>  {
-               return{
+                return{
                 headerTintColor:"white",
                 title: "         Yondu Lounge",
                 headerStyle:{
@@ -22,42 +22,20 @@ export default ContentStackNav = createStackNavigator({
                 },
                 headerLeft:
                   <Icon onPress={() => navigation.openDrawer()} 
-                      name="ios-menu" size={30} color="white" style={{marginLeft:10}} />,
-                headerRight:
-                  <Icon name="ios-notifications" size={30} color="white" style={{marginRight:10}}/>,
-             }
-          }
-        
-        },
-        
-        YonduJacketContent:{
-            screen:YonduJacketContent,
-            navigationOptions:
-             ({navigation}) =>  {
-             return{
-                headerTintColor:"white",
-                title: " Announcements",
-                headerStyle:{
-                    backgroundColor:"#FF5A5F",
-                    textAlign:"center",
-                    width:"100%"
-                },
-                headerLeft:
-                  <Icon onPress={() => navigation.openDrawer()}
-                     name="ios-menu" size={30} color="white" style={{marginLeft:10}}/>,
+                    name="ios-menu" size={30} color="white" style={{marginLeft:10}} />,
                 headerRight:
                   <Icon name="ios-notifications" size={30} color="white" style={{marginRight:10}}/>,
             }
           }
         },
 
-        SendFeedback:{
-            screen:SendFeedback,
+        UXFundamentals:{
+            screen:UXFundamentals,
             navigationOptions:
               ({navigation}) =>  {
-               return{
+                return{
                 headerTintColor:"white",
-                title: " Announcements",
+                title: " Skills Development",
                 headerStyle:{
                     backgroundColor:"#FF5A5F",
                     textAlign:"center",
@@ -71,5 +49,4 @@ export default ContentStackNav = createStackNavigator({
             }
           }
         }
-            
     })

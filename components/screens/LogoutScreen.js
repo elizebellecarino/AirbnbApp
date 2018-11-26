@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, Button} from 'react-native'
 
-   class WorkingScreen extends Component{
+   class LogoutScreen extends Component{
      render(){
      return(
      
     <View style={styles.container}>
       <View>
-          <Text>Working Conditions</Text>
+          <Text>Logout</Text>
       </View>
       </View>
       )}
@@ -18,4 +18,4 @@ import { View, Text, StyleSheet, Button} from 'react-native'
             flex:1
         }
     })
-export default WorkingScreen;
+export default LogoutScreen;

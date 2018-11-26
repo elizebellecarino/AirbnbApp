@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, Button, TouchableOpacity} from 'react-native'
+import { View, Text, StyleSheet, Button, TouchableOpacity } from 'react-native'
 import LocalImage from '../LocalImage/LocalImage'
 import logo from '../../components/assets/airbnb_logo.png'
 import yondu from '../../components/assets/yondu.jpg'
@@ -26,10 +26,10 @@ import Button2 from '../ButtonWithBackground/Button2'
              <Text style={styles.userLoginText}>User Login</Text>
            </View>
              <View style={styles.inputContainer}>
-              <DefaultInput placeholder={"Username"} style={{backgroundColor:"#F6F6F5"}} /> 
-              <DefaultInput placeholder={"Password"} style={{backgroundColor:"#F6F6F5"}} />
+              <DefaultInput placeholder={"Username"} style={{backgroundColor:"#f5f5f5"}} /> 
+              <DefaultInput placeholder={"Password"} style={{backgroundColor:"#f5f5f5"}} />
              </View>
-               <View style={styles.fogotPassword}>
+               <View style={styles.forgotPassword}>
                  <TouchableOpacity>
                  <Text style={styles.fogotPasswordText}>Forgot Password?</Text>
                  </TouchableOpacity>
@@ -46,7 +46,7 @@ import Button2 from '../ButtonWithBackground/Button2'
     const styles= StyleSheet.create({
       container:{
          flex:1,
-         backgroundColor: '#f5f5f5'
+         backgroundColor: 'white'
         },
         logoContent: {
             flex: 1,
@@ -56,7 +56,8 @@ import Button2 from '../ButtonWithBackground/Button2'
             paddingRight: 8
         },
         userLogin: {
-         alignItems: 'center'
+         alignItems: 'center',
+         backgroundColor: 'white'
         },
         userLoginText: {
           color: '#000000',
@@ -70,9 +71,10 @@ import Button2 from '../ButtonWithBackground/Button2'
           paddingLeft: 8,
           paddingRight: 8,
         },
-        fogotPassword: {
+        forgotPassword: {
           marginBottom: 20,
-          alignItems: 'center'
+          alignItems: 'center',
+          backgroundColor: 'white'
         },
         fogotPasswordText:{
           color: '#FF5A5F',
